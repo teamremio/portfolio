@@ -1,0 +1,25 @@
+{
+	"name": "Remio",
+	"private": true,
+	"version": "0.0.0",
+	"description": "Remio company website",
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync": "^1.5.7",
+		"gulp": "^3.8.8",
+		"gulp-autoprefixer": "^2.0.0",
+		"gulp-gh-pages": "^0.4.0",
+		"gulp-gzip": "0.0.8",
+		"gulp-htmlmin": "^0.2.0",
+		"gulp-imagemin": "^2.1.0",
+		"gulp-jshint": "^1.8.5",
+		"gulp-minify-css": "^0.3.10",
+		"gulp-sass": "^1.0.0",
+		"gulp-uglify": "^1.0.1",
+		"gulp-uncss": "^0.5.0",
+	},
+	"engines": {
+		"node": ">0.10.0"
+	},
+	"scripts": {}
+}
