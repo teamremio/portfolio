@@ -13,12 +13,12 @@ module.exports = {
     dest: dest,
     settings: {
       indentedSyntax: true, // Enable .sass syntax!
-      imagePath: '/images' // Used by the image-url helper
+      imagePath: '/img' // Used by the image-url helper
     }
   },
   images: {
-    src: src + "/images/**",
-    dest: dest + "/images"
+    src: src + "/img/**",
+    dest: dest + "/img"
   },
   markup: {
     src: src + "/htdocs/**",
@@ -28,7 +28,7 @@ module.exports = {
     // A separate bundle will be generated for each
     // bundle config in the list below
     bundleConfigs: [{
-      entries: src + '/javascript/global.coffee',
+      entries: src + '/js/global.coffee',
       dest: dest,
       outputName: 'global.js',
       // Additional file extentions to make optional
@@ -36,7 +36,7 @@ module.exports = {
       // list of modules to make require-able externally
       require: ['jquery', 'underscore']
     }, {
-      entries: src + '/javascript/page.js',
+      entries: src + '/js/page.js',
       dest: dest,
       outputName: 'page.js',
       // list of externally available modules to exclude from the bundle
