@@ -10,7 +10,8 @@ module.exports = {
   },
   sass: {
     src: src + "/sass/*.{sass,scss}",
-    dest: dest,
+    origin: src,
+    dest: dest + "/css",
     settings: {
       indentedSyntax: true, // Enable .sass syntax!
       imagePath: '/img' // Used by the image-url helper
