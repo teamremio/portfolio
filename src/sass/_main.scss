@@ -84,7 +84,7 @@ body {
 
 .info .column {
 	@include span(4 of 12);
-	padding-top: 2em;
+	padding: 2em 0;
 }
 
 .info p {
