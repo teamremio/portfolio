@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	font-family: montserratlight;
+}
+
+#header {
+	@include container(80em);
+}
+
+#header h1 {
+	@include span(3 of 12);
+	font-family: montserratbold;
+	color: $remio-blue;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+#header nav {
+	@include span (9 of 12);
+}
+
+#header nav li {
+	display: inline-block;
+	list-style: none;
+}
+
+#header nav a {
+	padding: 1em;
+	text-decoration: none;
+	font-family: montserratlight;
+	text-transform: uppercase;
+	color: $remio-black;
+}
+
+#header nav a:hover {
+	background: $remio-darkblue;
+	color: $remio-white;
+}
+
+.masthead {
+	background-color: $remio-blue;
+	padding: 3em 0;
+}
+
+.container {
+	@include container(80em);
+}
+
+.masthead h1 {
+	color: $remio-white;
+	text-transform: uppercase;
+	font-family: montserratbold;
+	text-align: center;
+}
+
+.masthead .masthead-banner {
+	margin: auto;
+	display: block;
+}
+
+.masthead .learn-more {
+	border: 1px solid $remio-white;
+	padding: 1em;
+	color: $remio-white;
+	text-transform: uppercase;
+	font-family: montserratlight;
+	text-decoration: none;
+	text-align: center;
+	width: 8em;
+	margin: 0 auto;
+	display: block;
+}
+
+.info .column-1, .info .column-2, .info .column-3 {
+	@include span(4 of 12);
+}
+
+.info p {
+	padding: 0 3em;
+}
+
+.clients h2 {
+	font-family: montserratbold;
+	text-transform: uppercase;
+	text-align: center;
+	color: $remio-black;
+}
+
+#footer {
+	min-height: 200px;
+	background-color: $remio-blue;
+}
+
+#subfooter {
+	min-height: 2.5em;
+	background-color: $remio-darkblue;
+	color: $remio-white;
+}
+
+#subfooter p {
+	margin: 0;
+	padding: 1.5em;
+	font-family: montserratlight;
+	font-size: .75em;
+	text-transform: uppercase;
+}
