@@ -19,6 +19,10 @@ body {
 	@include span (9 of 12);
 }
 
+#header nav ul {
+	float: right;
+}
+
 #header nav li {
 	display: inline-block;
 	list-style: none;
@@ -84,6 +88,27 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	color: $remio-black;
+}
+
+.clients ul {
+	margin: 0;
+	padding: 0;
+}
+
+.clients li {
+	list-style: none;
+	@include span(4 of 12);
+}
+
+.clients img {
+	margin: 0 auto;
+	display: block;
+}
+
+.testimonial {
+	background-color: #f9f9f9;
+	@include span(12 of 12);
+	margin: 1em 0;
 }
 
 #footer {
