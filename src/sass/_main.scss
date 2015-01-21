@@ -4,7 +4,7 @@ body {
 }
 
 #header {
-	@include container(80em);
+	@include container(75em);
 }
 
 #header h1 {
@@ -15,12 +15,18 @@ body {
 	margin: 0;
 }
 
+#header h1 span {
+	color: $remio-lightblue;
+}
+
 #header nav {
 	@include span (9 of 12);
 }
 
 #header nav ul {
 	float: right;
+	margin: 0;
+	padding: .75em 0;
 }
 
 #header nav li {
@@ -34,6 +40,7 @@ body {
 	font-family: montserratlight;
 	text-transform: uppercase;
 	color: $remio-black;
+	font-size: .9em;
 }
 
 #header nav a:hover {
@@ -47,7 +54,7 @@ body {
 }
 
 .container {
-	@include container(80em);
+	@include container(75em);
 }
 
 .masthead h1 {
