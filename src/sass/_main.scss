@@ -3,20 +3,30 @@ body {
 	font-family: montserratlight;
 }
 
+img {
+	max-width: 100%;
+}
+
 #header {
 	@include container(75em);
 }
 
-#header h1 {
+.logo {
 	@include span(3 of 12);
 	font-family: montserratbold;
 	color: $remio-blue;
 	text-transform: uppercase;
 	margin: 0;
+	padding-top: 2px;
 }
 
-#header h1 span {
+.logo span {
 	color: $remio-lightblue;
+}
+
+.logo a:link, .logo a:hover, .logo a:visited {
+	color: $remio-blue;
+	text-decoration: none;
 }
 
 #header nav {
@@ -35,17 +45,19 @@ body {
 }
 
 #header nav a {
-	padding: 1em;
+	padding: 1.1em;
 	text-decoration: none;
 	font-family: montserratlight;
 	text-transform: uppercase;
 	color: $remio-black;
 	font-size: .9em;
+	transition: background-color 400ms, color 400ms;
 }
 
 #header nav a:hover {
-	background: $remio-darkblue;
+	background: $remio-blue;
 	color: $remio-white;
+	transition: background-color 400ms, color 400ms;
 }
 
 .masthead {
@@ -80,6 +92,19 @@ body {
 	width: 8em;
 	margin: 0 auto;
 	display: block;
+	transition: border 400ms, color 400ms;
+}
+
+.button:hover {
+	border: 1px solid $remio-lightblue;
+	color: $remio-lightblue;
+	transition: border 400ms, color 400ms;
+}
+
+.button-hover-dark:hover {
+	border: 1px solid $remio-blue;
+	color: $remio-blue;
+	transition: border 400ms, color 400ms;
 }
 
 .info .column {
@@ -148,6 +173,7 @@ body {
 #footer {
 	min-height: 200px;
 	background-color: $remio-blue;
+	color: $remio-white;
 }
 
 #footer .column {
@@ -159,6 +185,24 @@ body {
 	color: $remio-white;
 	text-transform: uppercase;
 	font-size: 1em;
+}
+
+#footer .fa {
+	color: $remio-white;
+}
+
+#footer a {
+	font-family: montserratlight;
+	text-decoration: none;
+	color: $remio-white;
+	font-size: .9em;
+}
+
+.recent-posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: .9em;
 }
 
 #subfooter {
