@@ -6,6 +6,8 @@
 * Fix 1px margin under navigation:hover
 * Revise logo to use span instead of H1
 * MOBILE, YO
+* Github pages deploy process via Gulp
+* Write instructions on how to work all of this
 
 ## Admin: To Do
 
