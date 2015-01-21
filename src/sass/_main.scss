@@ -82,12 +82,24 @@ body {
 	display: block;
 }
 
-.info .column-1, .info .column-2, .info .column-3 {
+.info .column {
 	@include span(4 of 12);
+	padding-top: 2em;
 }
 
 .info p {
 	padding: 0 3em;
+}
+
+.info .fa-stack {
+	font-size: 3em;
+	margin: auto;
+	display: block;
+	color: $remio-blue;
+}
+
+.info .fa-stack-1x {
+	color: $remio-white;
 }
 
 .clients h2 {
@@ -121,6 +133,17 @@ body {
 #footer {
 	min-height: 200px;
 	background-color: $remio-blue;
+}
+
+#footer .column {
+	@include span(3 of 12);
+}
+
+#footer h3 {
+	font-family: montserratbold;
+	color: $remio-white;
+	text-transform: uppercase;
+	font-size: 1em;
 }
 
 #subfooter {
