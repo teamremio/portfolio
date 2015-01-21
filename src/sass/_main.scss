@@ -69,7 +69,7 @@ body {
 	display: block;
 }
 
-.masthead .learn-more {
+.button {
 	border: 1px solid $remio-white;
 	padding: 1em;
 	color: $remio-white;
@@ -102,7 +102,7 @@ body {
 	color: $remio-white;
 }
 
-.clients h2 {
+.clients h2, .case-study h2 {
 	font-family: montserratbold;
 	text-transform: uppercase;
 	text-align: center;
@@ -117,6 +117,7 @@ body {
 .clients li {
 	list-style: none;
 	@include span(4 of 12);
+	padding: 1em;
 }
 
 .clients img {
@@ -128,6 +129,20 @@ body {
 	background-color: #f9f9f9;
 	@include span(12 of 12);
 	margin: 1em 0;
+}
+
+.case-study {
+	background-color: $remio-lightblue;
+	padding: 2em 0;
+	border-top: 1px solid $remio-blue;
+}
+
+.case-study h2 {
+	color: $remio-white;
+}
+
+.case-study .column {
+	@include span(6 of 12);
 }
 
 #footer {
