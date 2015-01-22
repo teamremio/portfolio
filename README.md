@@ -1,7 +1,7 @@
 # Dev: To Do
 
 * Revise font structure
-* Export images
+* Quote html/css
 * Better font rendering
 * Fix 1px margin under navigation:hover
 * Revise logo to use span instead of H1
