@@ -12,12 +12,19 @@ img {
 }
 
 .logo {
-	@include span(3 of 12);
 	font-family: montserratbold;
 	color: $remio-blue;
 	text-transform: uppercase;
 	margin: 0;
 	padding-top: 2px;
+	text-align: center;
+}
+
+@media only screen and (min-width: 30em) {
+    .logo {
+    	@include span(3 of 12);
+    	text-align: left;
+    }
 }
 
 .logo span {
@@ -36,19 +43,31 @@ img {
 	text-decoration: none;
 }
 
-#header nav {
-	@include span (9 of 12);
+#header nav ul {
+	margin: 0;
+	padding: 0;
 }
 
-#header nav ul {
-	float: right;
-	margin: 0;
-	padding: .75em 0;
+@media only screen and (min-width: 30em) {
+
+    #header nav {
+    	@include span (9 of 12);
+    }
+
+    #header nav ul {
+    	float: right;
+    	padding: .75em 0;
+    }
 }
 
 #header nav li {
-	display: inline-block;
 	list-style: none;
+}
+
+@media only screen and (min-width: 30em) {
+    #header nav li {
+    	display: inline-block;
+    }
 }
 
 #header nav a {
@@ -59,6 +78,15 @@ img {
 	color: $remio-black;
 	font-size: .9em;
 	transition: background-color 400ms, color 400ms ease 100ms;
+	display: block;
+	text-align: center;
+}
+
+@media only screen and (min-width: 30em) {
+    #header nav a {
+    	text-align: left;
+    	display: inline;
+    }
 }
 
 #header nav a:hover {
@@ -114,13 +142,15 @@ img {
 	transition: border 400ms, color 400ms;
 }
 
-.info .column {
-	@include span(4 of 12);
-	padding: 2em 0;
-}
+@media only screen and (min-width: 30em) {
+    .info .column {
+    	@include span(4 of 12);
+    	padding: 2em 0;
+    }
 
-.info p {
-	padding: 0 3em;
+    .info p {
+    	padding: 0 3em;
+    }
 }
 
 .info .fa-stack {
@@ -148,8 +178,13 @@ img {
 
 .clients li {
 	list-style: none;
-	@include span(4 of 12);
 	padding: 1em;
+}
+
+@media only screen and (min-width: 30em) {
+    .clients li {
+		@include span(4 of 12);
+	}
 }
 
 .clients img {
@@ -173,8 +208,10 @@ img {
 	color: $remio-white;
 }
 
-.case-study .column {
-	@include span(6 of 12);
+@media only screen and (min-width: 30em) {
+    .case-study .column {
+    	@include span(6 of 12);
+    }
 }
 
 #footer {
@@ -183,8 +220,10 @@ img {
 	color: $remio-white;
 }
 
-#footer .column {
-	@include span(3 of 12);
+@media only screen and (min-width: 30em) {
+	#footer .column {
+		@include span(3 of 12);
+	}
 }
 
 #footer h3 {
