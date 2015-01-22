@@ -22,6 +22,13 @@ img {
 
 .logo span {
 	color: $remio-lightblue;
+	padding-left: 0;
+	transition: padding-left 400ms;
+}
+
+.logo:hover span {
+	padding-left: .25em;
+	transition: padding-left 400ms;
 }
 
 .logo a:link, .logo a:hover, .logo a:visited {
@@ -51,13 +58,13 @@ img {
 	text-transform: uppercase;
 	color: $remio-black;
 	font-size: .9em;
-	transition: background-color 400ms, color 400ms;
+	transition: background-color 400ms, color 400ms ease 100ms;
 }
 
 #header nav a:hover {
 	background: $remio-blue;
 	color: $remio-white;
-	transition: background-color 400ms, color 400ms;
+	transition: background-color 400ms, color 400ms ease 100ms;
 }
 
 .masthead {
