@@ -13,3 +13,8 @@
 
 * Gather testimonials
 * Permission to display logo on our site as a satisfied client?
+
+
+## Launch Prep
+
+* Re-allow robot indexing.
