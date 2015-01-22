@@ -2,6 +2,5 @@ name: Remio
 markdown: redcarpet
 pygments: true
 
-source: src
 destination: build
-exclude: [sass]
+exclude: [sass, gulp, node_modules, remio.sublime-project, README.md, gulpfile.js]
