@@ -1,12 +1,12 @@
 # Dev: To Do
 
-* Revise font structure
+* Sticky Footer
 * Quote html/css
+* Revise font structure
 * Better font rendering
-* Fix 1px margin under navigation:hover
+* CSS Organization patterns
 * Revise logo to use span instead of H1
 * MOBILE, YO
-* Github pages deploy process via Gulp
 * Write instructions on how to work all of this
 
 ## Admin: To Do
@@ -16,5 +16,4 @@
 
 
 ## Launch Prep
-
 * Re-allow robot indexing.

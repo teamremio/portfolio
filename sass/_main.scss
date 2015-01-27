@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: montserratlight;
+	font-family: "Open Sans";
 }
 
 img {
@@ -228,6 +228,7 @@ img {
 	min-height: 200px;
 	background-color: $remio-blue;
 	color: $remio-white;
+	font-family: montserratlight;
 }
 
 @media only screen and (min-width: 30em) {
@@ -280,4 +281,29 @@ img {
 	font-family: montserratlight;
 	font-size: .75em;
 	text-transform: uppercase;
+}
+
+/************************************************
+    Contact
+************************************************/
+
+label {
+	display: block;
+	color: $remio-white;
+}
+
+input, textarea {
+	display: block;
+	border: none;
+	width: 100%;
+	font-size: 16px;
+	font-family: "Open Sans";
+	margin-bottom: 1em;
+	-webkit-appearance: none;
+	padding: .5em;
+}
+
+
+.contact {
+	@include span(isolate 6 at 4 of 12);
 }
