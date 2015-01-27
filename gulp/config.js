@@ -22,7 +22,7 @@ module.exports = {
     dest: dest + "/img"
   },
   markup: {
-    src: ["./**/*.md", "./**/*.html", "./**/*.xml", "./**/*.txt"],
+    src: ["./**/*.md", "!./node_modules/**/*", "./**/*.html", "./**/*.xml", "./**/*.txt"],
     dest: dest
   },
   browserify: {
