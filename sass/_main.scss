@@ -194,7 +194,7 @@ img {
 
 .testimonial {
 	background-color: #f9f9f9;
-	@include span(12 of 12);
+	@include span(6 at 2 of 12);
 	margin: 1em 0;
 }
 
