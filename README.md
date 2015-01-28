@@ -1,6 +1,5 @@
 # Dev: To Do
 
-* Sticky Footer
 * Quote html/css
 * Revise font structure
 * Better font rendering

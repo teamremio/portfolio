@@ -1,6 +1,22 @@
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
 	font-family: "Open Sans";
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	margin-bottom: -17.75em;
+}
+
+#wrapper:after {
+	content: "";
+	display: block;
+	height: 17.75em;
 }
 
 img {
@@ -98,6 +114,7 @@ img {
 .masthead {
 	background-color: $remio-blue;
 	padding: 3em 0;
+	min-height: 15em;
 }
 
 .container {
@@ -116,7 +133,7 @@ img {
 	display: block;
 }
 
-.button {
+.button, button {
 	border: 1px solid $remio-white;
 	padding: 1em;
 	color: $remio-white;
@@ -128,9 +145,10 @@ img {
 	margin: 0 auto;
 	display: block;
 	transition: border 400ms, color 400ms;
+	background-color: transparent;
 }
 
-.button:hover {
+.button:hover, button:hover {
 	border: 1px solid $remio-lightblue;
 	color: $remio-lightblue;
 	transition: border 400ms, color 400ms;
@@ -151,6 +169,13 @@ img {
     .info p {
     	padding: 0 3em;
     }
+
+	.info h2 {
+		padding: 0 3em;
+		font-family: montserratbold;
+		text-transform: uppercase;
+		font-size: 1em;
+	}
 }
 
 .info .fa-stack {
@@ -211,7 +236,7 @@ img {
 .case-study {
 	background-color: $remio-lightblue;
 	padding: 2em 0 0;
-	border-top: 1px solid $remio-blue;
+	/*border-top: 1px solid $remio-blue;*/
 }
 
 .case-study h2 {
@@ -224,8 +249,12 @@ img {
     }
 }
 
+#footerwrapper {
+	height: 17.75em;
+}
+
 #footer {
-	min-height: 200px;
+	min-height: 12.5em;
 	background-color: $remio-blue;
 	color: $remio-white;
 	font-family: montserratlight;
