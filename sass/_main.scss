@@ -10,13 +10,15 @@ body {
 
 #wrapper {
 	min-height: 100%;
-	margin-bottom: -17.75em;
+	/*margin-bottom: -17.75em;*/
+	/*margin-bottom: -3.25em;*/
 }
 
 #wrapper:after {
-	content: "";
-	display: block;
-	height: 17.75em;
+	/*content: "";
+	display: block;*/
+	/*height: 17.75em;*/
+	/*height: 3.25;*/
 }
 
 img {
@@ -161,21 +163,40 @@ img {
 }
 
 @media only screen and (min-width: 30em) {
+
+	.info .tagline {
+		@include pre(2);
+		@include span(8 of 12);
+		text-align: center;
+		margin-bottom: 2em;
+	}
+
     .info .column {
     	@include span(4 of 12);
-    	padding: 2em 0;
+    	padding-top: 2em;
+    	padding-bottom: 2em;
+    }
+
+    .info .column:last-child {
+    	@include span(4 of 12 last);
     }
 
     .info p {
-    	padding: 0 3em;
+    	/*padding: 0 3em;*/
+    	font-size: 14px;
     }
 
-	.info h2 {
-		padding: 0 3em;
+	.info h3 {
+		/*padding: 0 3em;*/
+		text-align: center;
 		font-family: montserratbold;
 		text-transform: uppercase;
 		font-size: 1em;
 	}
+}
+
+.info {
+	padding: 4em 0;
 }
 
 .info .fa-stack {
@@ -189,32 +210,51 @@ img {
 	color: $remio-white;
 }
 
-.clients h2, .case-study h2 {
+h2 {
 	font-family: montserratbold;
 	text-transform: uppercase;
 	text-align: center;
 	color: $remio-black;
 }
 
+.clients {
+	background-color: #f6f6f6;
+	padding: 4em 0;
+}
+
 .clients ul {
-	margin: 0;
+	margin: 4em 0 0 0;
 	padding: 0;
 }
 
 .clients li {
 	list-style: none;
-	padding: 1em;
+	/*padding: 1em;*/
 }
 
 @media only screen and (min-width: 30em) {
+
+	.clients {
+		@include gutter(12);
+	}
+
     .clients li {
-		@include span(4 of 12);
+		@include gallery(4 of 12);
+		margin-bottom: gutter(12);
+		/*height: 8em;*/
+		/*background-color: #fff;*/
 	}
 }
 
 .clients img {
-	margin: 0 auto;
-	display: block;
+	/*margin: 0 auto;*/
+	/*display: block;*/
+	transition: box-shadow 400ms;
+}
+
+.clients img:hover {
+	box-shadow: 2px 2px 2px #eee;
+	transition: box-shadow 400ms;
 }
 
 .testimonial {
@@ -250,7 +290,8 @@ img {
 }
 
 #footerwrapper {
-	height: 17.75em;
+	/*height: 17.75em;*/
+	height: 3.25em;
 }
 
 #footer {
@@ -271,6 +312,7 @@ img {
 	color: $remio-white;
 	text-transform: uppercase;
 	font-size: 1em;
+	letter-spacing: 2px;
 }
 
 #footer .fa {
@@ -319,20 +361,43 @@ img {
 label {
 	display: block;
 	color: $remio-white;
+	line-height: 1.5em;
 }
 
 input, textarea {
 	display: block;
-	border: none;
+	border: 1px solid #333;
 	width: 100%;
 	font-size: 16px;
 	font-family: "Open Sans";
 	margin-bottom: 1em;
 	-webkit-appearance: none;
 	padding: .5em;
+	box-sizing: border-box;
 }
 
-
 .contact {
-	@include span(isolate 6 at 4 of 12);
+	background-color: $remio-blue;
+	color: $remio-white;
+	padding: 4em 0;
+}
+
+.contact .col-1 {
+	@include span(6 of 12);
+}
+
+.contact .col-2 {
+	@include span(4 of 12 last);
+	@include squish(1);
+}
+
+.contact a {
+	/*font-family: montserratlight;*/
+	text-decoration: none;
+	color: $remio-white;
+	font-size: .9em;
+}
+
+.contact h2 {
+	color: $remio-white;
 }

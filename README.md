@@ -1,5 +1,7 @@
 # Dev: To Do
 
+* Menu scrolling
+* Smooth scrolling
 * Quote html/css
 * Revise font structure
 * Better font rendering
