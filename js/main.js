@@ -1,1 +1,1 @@
-
+$('#header a').smoothScroll();
