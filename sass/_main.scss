@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
 html {
 	height: 100%;
 }
@@ -8,29 +12,59 @@ body {
 	height: 100%;
 }
 
-#wrapper {
-	min-height: 100%;
-	/*margin-bottom: -17.75em;*/
-	/*margin-bottom: -3.25em;*/
-}
-
-#wrapper:after {
-	/*content: "";
-	display: block;*/
-	/*height: 17.75em;*/
-	/*height: 3.25;*/
-}
-
 img {
 	max-width: 100%;
 }
 
-#header {
-	background-color: $remio-white;
+h2 {
+	font-family: montserratbold;
+	text-transform: uppercase;
+	text-align: center;
+	color: $remio-black;
 }
 
-#header header{
+label {
+	display: block;
+	color: $remio-white;
+	line-height: 1.5em;
+}
+
+input, textarea {
+	display: block;
+	border: 1px solid #333;
+	width: 100%;
+	font-size: 16px;
+	font-family: "Open Sans";
+	margin-bottom: 1em;
+	-webkit-appearance: none;
+	padding: .5em;
+	box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+
+
+#wrapper {
+	min-height: 100%;
+}
+
+
+.container {
 	@include container(75em);
+}
+
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+
+
+#header {
+	background-color: $remio-white;
 }
 
 .logo {
@@ -124,10 +158,6 @@ img {
 	z-index: 999;
 }
 
-.container {
-	@include container(75em);
-}
-
 .masthead h1 {
 	color: $remio-white;
 	text-transform: uppercase;
@@ -187,12 +217,10 @@ img {
     }
 
     .info p {
-    	/*padding: 0 3em;*/
     	font-size: 14px;
     }
 
 	.info h3 {
-		/*padding: 0 3em;*/
 		text-align: center;
 		font-family: montserratbold;
 		text-transform: uppercase;
@@ -215,13 +243,6 @@ img {
 	color: $remio-white;
 }
 
-h2 {
-	font-family: montserratbold;
-	text-transform: uppercase;
-	text-align: center;
-	color: $remio-black;
-}
-
 .clients {
 	background-color: #f6f6f6;
 	padding: 4em 0;
@@ -234,7 +255,6 @@ h2 {
 
 .clients li {
 	list-style: none;
-	/*padding: 1em;*/
 }
 
 @media only screen and (min-width: 30em) {
@@ -246,14 +266,10 @@ h2 {
     .clients li {
 		@include gallery(4 of 12);
 		margin-bottom: gutter(12);
-		/*height: 8em;*/
-		/*background-color: #fff;*/
 	}
 }
 
 .clients img {
-	/*margin: 0 auto;*/
-	/*display: block;*/
 	transition: box-shadow 400ms;
 }
 
@@ -281,7 +297,6 @@ h2 {
 .case-study {
 	background-color: $remio-lightblue;
 	padding: 2em 0 0;
-	/*border-top: 1px solid $remio-blue;*/
 }
 
 .case-study h2 {
@@ -295,7 +310,6 @@ h2 {
 }
 
 #footerwrapper {
-	/*height: 17.75em;*/
 	height: 3.25em;
 }
 
@@ -363,27 +377,8 @@ h2 {
     Contact
 ************************************************/
 
-label {
-	display: block;
-	color: $remio-white;
-	line-height: 1.5em;
-}
-
-input, textarea {
-	display: block;
-	border: 1px solid #333;
-	width: 100%;
-	font-size: 16px;
-	font-family: "Open Sans";
-	margin-bottom: 1em;
-	-webkit-appearance: none;
-	padding: .5em;
-	box-sizing: border-box;
-}
-
 .contact {
 	background-color: $remio-blue;
-	/*background: url(../img/contact.jpg) repeat $remio-blue;*/
 	color: $remio-white;
 	padding: 4em 0;
 }
@@ -398,7 +393,6 @@ input, textarea {
 }
 
 .contact a {
-	/*font-family: montserratlight;*/
 	text-decoration: none;
 	color: $remio-white;
 	font-size: .9em;
