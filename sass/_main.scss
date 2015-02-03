@@ -56,12 +56,15 @@ button, .button {
 	background-color: transparent;
 }
 
+button:hover, .button:hover {
+	border: 1px solid $remio-lightblue;
+	color: $remio-lightblue;
+	transition: border 400ms, color 400ms;
+}
 
 /* ==========================================================================
    Layout
    ========================================================================== */
-
-
 
 #wrapper {
 	min-height: 100%;
@@ -76,15 +79,12 @@ button, .button {
 	height: 3.25em;
 }
 
-
 /* ==========================================================================
    Modules
    ========================================================================== */
 
 
-#header {
-	background-color: $remio-white;
-}
+/* Branding */
 
 .logo {
 	font-family: montserratbold;
@@ -116,6 +116,12 @@ button, .button {
 .logo a:link, .logo a:hover, .logo a:visited {
 	color: $remio-blue;
 	text-decoration: none;
+}
+
+/* Header */
+
+#header {
+	background-color: $remio-white;
 }
 
 #header nav ul {
@@ -170,6 +176,8 @@ button, .button {
 	transition: background-color 400ms, color 400ms ease 100ms;
 }
 
+/* Banner */
+
 .masthead {
 	background-color: $remio-blue;
 	padding: 3em 0;
@@ -184,17 +192,8 @@ button, .button {
 	text-align: center;
 }
 
-.button:hover, button:hover {
-	border: 1px solid $remio-lightblue;
-	color: $remio-lightblue;
-	transition: border 400ms, color 400ms;
-}
 
-.button-hover-dark:hover {
-	border: 1px solid $remio-blue;
-	color: $remio-blue;
-	transition: border 400ms, color 400ms;
-}
+/* Info */
 
 @media only screen and (min-width: 30em) {
 
@@ -242,6 +241,8 @@ button, .button {
 	color: $remio-white;
 }
 
+/* Clients */
+
 .clients {
 	background-color: #f6f6f6;
 	padding: 4em 0;
@@ -278,23 +279,13 @@ button, .button {
 	transition: box-shadow 400ms;
 }
 
-@media only screen and (min-width: 30em) {
-    .case-study .column {
-    	@include span(6 of 12);
-    }
-}
+/* Footer */
 
 #footer {
 	min-height: 12.5em;
 	background-color: $remio-blue;
 	color: $remio-white;
 	font-family: montserratlight;
-}
-
-@media only screen and (min-width: 30em) {
-	#footer .column {
-		@include span(3 of 12);
-	}
 }
 
 #footer h3 {
@@ -314,20 +305,6 @@ button, .button {
 	text-decoration: none;
 	color: $remio-white;
 	font-size: .9em;
-}
-
-.recent-posts {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	font-size: .9em;
-}
-
-.recent-posts time {
-	display: block;
-	font-size: .75em;
-	margin-bottom: 1em;
-	color: $remio-lightblue;
 }
 
 #subfooter {
@@ -371,4 +348,33 @@ button, .button {
 
 .contact h2 {
 	color: $remio-white;
+}
+
+/* Misc stuff right now */
+
+.button-hover-dark:hover {
+	border: 1px solid $remio-blue;
+	color: $remio-blue;
+	transition: border 400ms, color 400ms;
+}
+
+.recent-posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: .9em;
+}
+
+.recent-posts time {
+	display: block;
+	font-size: .75em;
+	margin-bottom: 1em;
+	color: $remio-lightblue;
+}
+
+
+@media only screen and (min-width: 30em) {
+	#footer .column {
+		@include span(3 of 12);
+	}
 }
