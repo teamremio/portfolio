@@ -41,6 +41,21 @@ input, textarea {
 	box-sizing: border-box;
 }
 
+button, .button {
+	border: 1px solid $remio-white;
+	padding: 1em;
+	color: $remio-white;
+	text-transform: uppercase;
+	font-family: montserratlight;
+	text-decoration: none;
+	text-align: center;
+	width: 8em;
+	margin: 0 auto;
+	display: block;
+	transition: border 400ms, color 400ms;
+	background-color: transparent;
+}
+
 
 /* ==========================================================================
    Layout
@@ -55,6 +70,10 @@ input, textarea {
 
 .container {
 	@include container(75em);
+}
+
+#footerwrapper {
+	height: 3.25em;
 }
 
 
@@ -165,26 +184,6 @@ input, textarea {
 	text-align: center;
 }
 
-.masthead .masthead-banner {
-	margin: auto;
-	display: block;
-}
-
-.button, button {
-	border: 1px solid $remio-white;
-	padding: 1em;
-	color: $remio-white;
-	text-transform: uppercase;
-	font-family: montserratlight;
-	text-decoration: none;
-	text-align: center;
-	width: 8em;
-	margin: 0 auto;
-	display: block;
-	transition: border 400ms, color 400ms;
-	background-color: transparent;
-}
-
 .button:hover, button:hover {
 	border: 1px solid $remio-lightblue;
 	color: $remio-lightblue;
@@ -267,6 +266,7 @@ input, textarea {
 		@include gallery(4 of 12);
 		margin-bottom: gutter(12);
 	}
+
 }
 
 .clients img {
@@ -278,39 +278,10 @@ input, textarea {
 	transition: box-shadow 400ms;
 }
 
-.testimonial {
-	background-color: #f9f9f9;
-	@include span(6 at 2 of 12);
-	margin: 1em 0;
-}
-
-.testimonial img {
-	margin: 1em;
-	float: left;
-}
-
-.testimonial cite {
-	font-family: montserratbold;
-	font-style: normal;
-}
-
-.case-study {
-	background-color: $remio-lightblue;
-	padding: 2em 0 0;
-}
-
-.case-study h2 {
-	color: $remio-white;
-}
-
 @media only screen and (min-width: 30em) {
     .case-study .column {
     	@include span(6 of 12);
     }
-}
-
-#footerwrapper {
-	height: 3.25em;
 }
 
 #footer {
