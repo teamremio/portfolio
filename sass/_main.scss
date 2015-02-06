@@ -21,6 +21,7 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	color: $remio-black;
+	letter-spacing: 1px;
 }
 
 label {
@@ -70,6 +71,14 @@ button:hover, .button:hover {
 	min-height: 100%;
 }
 
+section {
+	padding: 4em 0;
+}
+
+section:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
 
 .container {
 	@include container(75em);
@@ -79,10 +88,13 @@ button:hover, .button:hover {
 	height: 3.25em;
 }
 
+.l-3-cols .column {
+	@include span(4 of 12);
+}
+
 /* ==========================================================================
    Modules
    ========================================================================== */
-
 
 /* Branding */
 
@@ -180,9 +192,6 @@ button:hover, .button:hover {
 
 .masthead {
 	background-color: $remio-blue;
-	padding: 3em 0;
-	min-height: 15em;
-	z-index: 999;
 }
 
 .masthead h1 {
@@ -190,6 +199,7 @@ button:hover, .button:hover {
 	text-transform: uppercase;
 	font-family: montserratbold;
 	text-align: center;
+	margin-top: 2em;
 }
 
 
@@ -228,6 +238,7 @@ button:hover, .button:hover {
 
 .info {
 	padding: 4em 0;
+	/*background-color: #f6f6f6;*/
 }
 
 .info .fa-stack {
@@ -277,6 +288,57 @@ button:hover, .button:hover {
 .clients img:hover {
 	box-shadow: 2px 2px 2px #eee;
 	transition: box-shadow 400ms;
+}
+
+/* Team */
+
+.team {
+	background: url(../img/contact.jpg) repeat;
+	color: #fff;
+}
+
+.team h2 {
+	color: $remio-white;
+}
+
+.team ul {
+	padding: 0;
+	margin-top: 4em;
+}
+
+.team li {
+	list-style: none;
+	text-align: center;
+}
+
+.team img {
+	/*border: 1px solid #ccc;*/
+}
+
+.team .name {
+	font-family: montserratlight;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-bottom: 0;
+}
+
+.team .title {
+	display: block;
+	margin: 0;
+	font-size: .75em;
+}
+
+@media only screen and (min-width: 30em) {
+
+	.team {
+		@include gutter(12);
+	}
+
+    .team li {
+		@include gallery(3 of 12);
+		margin-bottom: gutter(12);
+	}
+
 }
 
 /* Footer */
@@ -331,13 +393,17 @@ button:hover, .button:hover {
 	padding: 4em 0;
 }
 
-.contact .col-1 {
-	@include span(6 of 12);
-}
+@media only screen and (min-width: 30em) {
 
-.contact .col-2 {
-	@include span(4 of 12 last);
-	@include squish(1);
+	.contact .col-1 {
+		@include span(6 of 12);
+	}
+
+	.contact .col-2 {
+		@include span(4 of 12 last);
+		@include squish(1);
+	}
+
 }
 
 .contact a {
@@ -348,6 +414,29 @@ button:hover, .button:hover {
 
 .contact h2 {
 	color: $remio-white;
+}
+
+.contact .fa {
+	margin-right: 1em;
+}
+
+/* Quotes */
+
+blockquote {
+	margin-top: 2em;
+	@include span(8 of 12);
+	@include squish(2);
+}
+
+blockquote p {
+	font-size: 1em;
+}
+
+blockquote cite {
+	float: right;
+	font-family: montserratlight;
+	text-transform: uppercase;
+	font-size: 1em;
 }
 
 /* Misc stuff right now */
