@@ -82,6 +82,11 @@ section:first-child {
 
 .container {
 	@include container(75em);
+	margin: 0 1em;
+}
+
+#header .container {
+	margin: 0;
 }
 
 #footerwrapper {
@@ -309,6 +314,7 @@ section:first-child {
 .team li {
 	list-style: none;
 	text-align: center;
+	margin-bottom: gutter(12);
 }
 
 .team img {
@@ -339,6 +345,48 @@ section:first-child {
 		margin-bottom: gutter(12);
 	}
 
+}
+
+/* Why */
+
+#why {
+	background-color: #f6f6f6;
+}
+
+#why > .container > p {
+	@include pre(2);
+	@include post(2);
+	@include span(8 of 12);
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#why ul {
+	list-style: none;
+	padding: 0;
+}
+
+@media only screen and (min-width: 30em) {
+	#why li {
+		@include gallery(3 of 12);
+	}
+
+	#why ul {
+		background: url(../img/why.png) no-repeat bottom right;
+	}
+}
+
+#why h3 {
+	margin: 0;
+	font-size: 1em;
+	font-family: montserratlight;
+	text-transform: uppercase;
+}
+
+#why ul p {
+	font-size: 80%;
+	margin: .25em 0 2em;
+	/*text-align: justify;*/
 }
 
 /* Footer */
