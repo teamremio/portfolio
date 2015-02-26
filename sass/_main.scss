@@ -452,6 +452,16 @@ section:first-child {
 		@include squish(1);
 	}
 
+	.input-half {
+		@include span(3 of 6);
+		padding-left: 0;
+	}
+
+	.input-half.last {
+		@include span(3 of 6);
+		padding-right: 0;
+	}
+
 }
 
 .contact a {
