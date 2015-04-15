@@ -82,11 +82,13 @@ section:first-child {
 
 .container {
 	@include container(75em);
-	margin: 0 1em;
+	margin: 0 auto;
+	padding: 0 1em;
 }
 
 #header .container {
-	margin: 0;
+	margin: 0 auto;
+	padding: 0;
 }
 
 #footerwrapper {
