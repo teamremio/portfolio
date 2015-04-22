@@ -122,7 +122,7 @@ section:first-child {
 }
 
 .logo span {
-	color: $remio-lightblue;
+	// color: $remio-lightblue;
 	padding-left: 0;
 	transition: padding-left 400ms;
 }
@@ -199,6 +199,13 @@ section:first-child {
 
 .masthead {
 	background-color: $remio-blue;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 30em) {
+	.masthead {
+		min-height: 720px;
+	}
 }
 
 .masthead h1 {
@@ -214,7 +221,7 @@ section:first-child {
 
 @media only screen and (min-width: 30em) {
 
-	.info .tagline, #why .tagline {
+	.tagline {
 		@include pre(2);
 		@include span(8 of 12);
 		text-align: center;
@@ -231,7 +238,7 @@ section:first-child {
     	@include span(4 of 12 last);
     }
 
-    .info p {
+    .info p, #why .tagline {
     	font-size: 14px;
     }
 
@@ -526,4 +533,10 @@ blockquote cite {
 	#footer .column {
 		@include span(3 of 12);
 	}
+}
+
+.submitted .tagline,
+.submitted a:link,
+.submitted a:visited {
+	color: $remio-white;
 }
