@@ -214,7 +214,7 @@ section:first-child {
 
 @media only screen and (min-width: 30em) {
 
-	.info .tagline {
+	.info .tagline, #why .tagline {
 		@include pre(2);
 		@include span(8 of 12);
 		text-align: center;
